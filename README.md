@@ -5,7 +5,10 @@ Why stand in queue when you can BILL easyy!!
 # Getting Started 
 
 git clone https://github.com/Prosecutor1x/BillEz.git
+
 npm install
+
+
 
 
 
@@ -32,3 +35,11 @@ Seeing device in the right column means the device is connected. You must have o
 Type the following in your command prompt to install and launch your app on the device:
 
 $ npx react-native run-android
+
+
+# HOW TO MAKE PR:
+
+1. git checkout -b branchname
+2. git add .
+3. git commit -m 'Commit message'
+4. git push origin branchname
