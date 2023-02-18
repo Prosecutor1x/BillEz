@@ -10,15 +10,13 @@ import type {PropsWithChildren} from 'react';
 import * as Animatable from 'react-native-animatable';
 
 import {
-  SafeAreaView,
-  StatusBar,
-  StyleSheet,
   Text,
   useColorScheme,
   View,
 } from 'react-native';
 
-import {Colors} from 'react-native/Libraries/NewAppScreen';
+
+import Home from './src/screens/home.main';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -27,29 +25,16 @@ type SectionProps = PropsWithChildren<{
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+ 
+  
+
 
   return (
-    <View style={[styles.container]}>
-      <Animatable.Text animation="slideInDown" iterationCount={50} direction="alternate" style={[styles.text]}>Welcome to BillEz</Animatable.Text>
+    <View className="flex-1 justify-center items-center">
+      <Animatable.Text animation="slideInDown" iterationCount={50} direction="alternate" >Welcome to BillEz</Animatable.Text>
+      <Text className="text-green-300" > ITS ME NUNUBHAB MALAKAR</Text>
+      <Home/>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: 20,
-    justifyContent:'center',
-    alignItems:'center',
-  },
-  text:{
-    fontWeight:'800',
-    fontSize:40,
-    color:'red',
-  }
-});
-
 export default App;
