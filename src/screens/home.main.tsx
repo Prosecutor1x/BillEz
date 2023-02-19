@@ -1,14 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import {Text, View} from 'react-native';
+import React from 'react';
 
-const Home = () => {
+
+function Home(): JSX.Element {
   return (
-    <View>
-      <Text className="font-bold bg-slate-900 ">Home</Text>
+    <View className='flex justify-center items-center'>
+      <Text className=' text-red-600 text-4xl' >Hello from Home</Text>
     </View>
-  )
+  );
 }
-
-export default Home
-
-const styles = StyleSheet.create({})
+export default Home;
