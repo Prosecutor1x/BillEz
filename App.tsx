@@ -23,7 +23,7 @@ function App(): JSX.Element {
     <View className="flex-1 justify-center items-center">
       <StatusBar />
       <Home />
-      <Text className='text-red-300 text-4xl'>Hii hello</Text>
+      <Text className='text-red-300 text-4xl'>Hii</Text>
     </View>
   );
 }
